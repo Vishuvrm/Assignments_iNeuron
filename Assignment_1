@@ -1,0 +1,75 @@
+Que1. What are the differences between operators and values in the following?
+Ans:  * => This is the multiplication operator and is used for multiplying the 2 objects
+      "hello" => This is a string value
+      -87.8 => This is the integer value
+      - => This is a subtraction operator, and is used for subtracting one object from another.
+      / => This is a division operator, and is used for dividing 2 objects
+      + => This is addition operator
+      6 => This is an integer value
+
+Que2. What is the difference between string and variables?
+Ans: String => A string is a data type in python
+     variable => A variable is a reference to the object's memory address
+     
+     spam => It's a variable
+     "spam" => It's a string object
+ 
+
+Que3. Describe 3 different data forms.
+Ans: The 3 main data forms in python are:
+      1. Numeric
+      2. Bollean
+      3. String
+ 
+Que4. What makes up an expression? What are the functions of all expressions?
+Ans: An Expression is made up of 3 components:
+     1. Operators
+     2. Literals
+     3. Identifiers
+     An expression simply represents some entity like an integer, a string, or any instance of a class.
+     An expression may also contain some operations between entities. For example.
+     If "hello" is an expression, then ("hello" + " world") is also an expression.
+     
+Que5. In this chapter, assignment statements such as spam = 10 were added. What's the
+difference between a declaration and an expression?
+Ans: Declaration: Declaring a variable simply means binding it to a datatype. It simple terms, creating a
+                  space inside the memory to store some values. In python, the variables are automatically
+                  declared when we write the assignment statement. For e.g. in our case
+                  spam = 10    automatically declares an integer variable named spam
+     Expression: An expression is a combination of variables, operations, and values which results 
+                in some some final value. For example 2+2 is an expression which yields an integer object 2.
+ 
+ 
+Que6. After running the following code, what does the variable bacon contain?
+      bacon = 22
+      bacon + 1
+
+Ans: The bacon still contains 22
+
+Que7. What should be the values of the following 2 terms be?
+      1. 'spam'+'spamspam'
+      2. 'spam'*3
+
+Ans:  For 1.,   it is 'spamspamspam'
+      For 2.,   it is 'spamspamspam'
+
+Que8. Why is it that eggs is a true variable name but 100 not?
+Ans: eggs satisfies all the rules of being an identifier, thus it is fit to be a variable name, while
+     100 is an integer object, and a variable name can't be a numerical value or start with a numerical value.
+     Thus, egg is a true variable name, but  is not.
+
+Que9. Which of the following three functions may be used to convert a value to an integer, a
+      floating-point number, or a string?
+Ans: Value to an integer: int function
+     Value to floating-point numer: float function
+     Value to a string: str function
+
+
+Que10. 10. What is the error caused by this expression? What would you do about it?
+
+'I have eaten' + 99 + 'burritos.'
+
+Ans: It gives the following error:
+      TypeError: can only concatenate str (not "int") to str
+     
+     Rectified expression would be like:  'I have eaten' + '99' + 'burritos.'
