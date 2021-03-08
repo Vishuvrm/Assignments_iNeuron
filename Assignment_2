@@ -1,0 +1,207 @@
+Que1. What are the Boolean data type's two values? How do you go about writing them?
+Ans: The 2 values for boolean data types are:
+        1. True
+        2. False
+     We write them as: True & False.  We can assign them tob variables as:
+                                      x = True
+                                      y = False
+                                    
+Que2. What are 3 different types of boolean operators?
+Ans: The 3 boolean operators are:
+          1. and
+          2. or
+          3. not
+      
+Que3. Make a list of each Boolean operator's truth tables (i.e. every possible combination of Boolean
+values for the operator and what it evaluate ).
+
+Ans:   T means True & F means False                
+                      Boolean and:
+                                  T and F = F
+                                  T and T = T
+                                  F and T = F
+                                  F and F = F
+                       Boolean or:
+                                  T or F = T
+                                  F or T = T
+                                  F or F = F
+                                  T or T = T
+                      
+                       Boolean not:
+                                  not T = F
+                                  not F = T
+                                  
+ Que4. What are the values of the following expressions?
+            (5 > 4) and (3 == 5)
+            not (5 > 4)
+            (5 > 4) or (3 == 5)
+            not ((5 > 4) or (3 == 5))
+            (True and True) and (True == False)
+            (not False) or (not True)
+            
+Ans:        (5 > 4) and (3 == 5)       =      True and False => False
+            not (5 > 4)                =      not True => False
+            (5 > 4) or (3 == 5)        =      True or False => True
+            not ((5 > 4) or (3 == 5))  =      not (True or False) = not(True) => False
+            (True and True) and (True == False) = True and False => False
+            (not False) or (not True)  =      True or False => True4
+
+
+Que5. What are the six different types of reference operators?
+Ans:   =  (simple assignment)
+       += (increment assignment)
+       -= (decrement assignment)
+       *= (multiplication assignment)
+       /= (division assignment)
+       %= (modulo assignment)
+       //= (floor division assignment)
+ 
+Que6. How do you tell the difference between the equal to and assignment operators?
+Ans:   == (equal to operator): It is a comparison operator which is used to compare whether 2 values are equal
+       =  (assignment operator): It is the reference operator which is used to assign a value to the variable.
+
+
+Que7. Describe a condition and when you would use one.
+Ans: 
+        i) Equal to operator( == ): Used to compare 2 values for equality.
+           For e.g. "hello"=="hello" => returns True
+                    "hello"=="hell"  => returns False
+       ii) Assignment operator(=): Used to assign values ot the variables.
+           For e.g.  x = 5      (It assigns an integer 5 to the variable named x)
+      
+ 
+Que8. Recognize the following three blocks in this code:
+
+ 0     spam = 0
+ 1     if spam == 10:
+ 2       print("eggs")
+ 3
+ 4       if spam > 5:
+ 5         print("bacon")
+ 6       else:
+ 7         print("ham")
+ 8       print("spam")
+ 9     print("spam")
+
+Ans: In the above code blocks, only the print statement in line no. 9 will be printed.
+     Hence, the result will be:
+     spam
+
+Que9. Create a programme that prints. If 1 is stored in spam, prints Hello; if 2 is stored in spam, prints
+      Howdy; and if 3 is stored in spam, prints Salutations! if there's something else in spam.
+Ans:
+     spam = int(input("Enter the value"))
+     
+     if spam == 1:
+        print("Hello")
+     elif spam == 2:
+        print("Howdy")
+     else:
+        print("Greetings!")
+        
+
+Que10. If your programme is stuck in an endless loop, what keys can you press?
+Ans: Ctrl + c
+
+Que11. How can you tell the difference between break and continue?
+Ans: break: As soon as the break statement is executed in a loop, that loop is terminated and the next statements outside that loop starts executing.
+            For e.g. 
+            for i in range(10):
+                print(i)
+                if i==3:
+                  break
+            print("Loop is finished")
+            
+          This will print:  0
+                            1
+                            2
+                            3
+                            Loop is finished
+                   
+     continue: The continue keyword doesn't stop the loop, but as this statement is executed,
+               it stops the current iteration, and begins the next iteration in the same loop, without even executing all the statements 
+               after this statement.
+               For e.g. 
+                for i in range(10):
+                    if i>3:
+                      continue
+                    print(i)
+                print("Loop is finished")
+
+              This will print: 0
+                               1
+                               2
+                               3
+                               Loop is finished
+                               
+                               
+Que12. In a for loop, what is the difference between range(10), range(0, 10), and range(0, 10, 1)?
+Ans:   range in python return an object that produces a sequence of integers from start (inclusive)
+        1) range(10) => It returns an object that produces sequence of integers starting from 0 upto 10, and excluding 10, with step size(or increment) of 1 in each iteration.
+                        for e.g.
+                        for i in range(10):
+                            print(i)
+
+                    It will print:   0
+                                     1
+                                     2
+                                     3
+                                     4
+                                     5
+                                     6
+                                     7
+                                     8
+                                     9
+
+        2) range(0,10) => It is same as range(10), and will return an object that produces sequence of integers starting from 0 upto 10, and excluding 10, 
+                          with step size(or increment) of 1 in each iteration.
+                        for e.g.
+                        for i in range(0,10):
+                            print(i)
+
+                    It will print:   0
+                                     1
+                                     2
+                                     3
+                                     4
+                                     5
+                                     6
+                                     7
+                                     8
+                                     9
+
+        3) range(0,10,1) =>  It is same as range(10) & range(0,10), and will return an object that produces sequence of integers starting from 0 upto 10, and excluding 10, 
+                             with step size (or increment) of 1 in each iteration.
+                        for e.g.
+                        for i in range(0,10,1):
+                            print(i)
+
+                    It will print:   0
+                                     1
+                                     2
+                                     3
+                                     4
+                                     5
+                                     6
+                                     7
+                                     8
+                                     9
+
+
+Que13. Using a for loop, write a short programme that prints the numbers 1 to 10 Then, using a while
+       loop, create an identical programme that prints the numbers 1 to 10.
+    
+Ans: 1)  Using for loop:
+                         for i in range(1,11):
+                              print(i)
+     2)  Using while loop:
+                         i = 1
+                         while i<=10:
+                             print(i)
+                             i+=1
+
+Que14 If you had a bacon() function within a spam module, what would you call it after importing
+spam?
+Ans: Since the method is the function which belongs to an object. Thus, when 
+     we import the spam module, it is actually the module object. Thus, as bacon belongs
+     to that module object, we would call it method.
