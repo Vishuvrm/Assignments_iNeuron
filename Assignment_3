@@ -1,0 +1,80 @@
+Que1: What are the benefits of including roles in the programmes?
+Ans: 
+
+Que2: When does the code in a function run: when it's specified or when it's called?
+Ans: When it is called.
+
+Que3: What statement causes a feature to be created?
+Ans: 
+
+Que4: What is the distinction between a function and a call to a function?
+Ans: Function: A function, in any programming language, is simply a reference to the 
+               block of code in computer's memory.
+     Function call: A call to the function means we want the interpreter to run the code at
+                    which the called function was referring to.
+
+
+Que5: In a Python application, how many global scopes are there? 
+      How many local scopes are there?
+
+Ans:In Python, there is only one global scope or module scope for every program you run. This scope exists
+    until you terminate the program.
+    For Local scopes, they reside inside the gloabl scopes, and you can create as many local
+    scopes you want in the global scope or the module scope.
+
+
+Que6: When a function call returns, what happens to variables in the local scope?
+Ans: When we call the function, a local name space for that function is created, and in that name
+     space, we have all the variables which were inside the function. The variables which were 
+     local to that function are assigned the values in that name space.
+
+Que7: What is the concept of a return value? Is it possible to have a return value in an expression?
+Ans: The return value is the value which is returned by an expression in the console. Yes, the expression has the return value.
+
+Que8: What is the return value of a call to a function that does not have a return statement?
+Ans:  None
+
+Que9: How do you make a function variable refer to the global variable?
+Ans: Method1: A varibale inside a function refers to the global variable if it is not assigned any value inside that function.
+              For e.g.
+
+              a = 10 # global varibale
+
+              def func():
+                 print(a) #Here a refers to the global variable a
+              
+              func()  ==> 10
+             -------------------------------------------------------------------    
+    Method2: By using the global keyword
+              
+              a = 10
+              def func1():
+                 global a
+                 a = 5 # Here, a refers to the global variable
+              
+              print(a)  ==> 10
+              -------------------------------------------------------------------
+   Method3:   By assigning a global variable to local variable
+              
+              a = 10
+              def func2():
+                 x = a
+                 print(x) # Here x is the local variable, but it refers to the global variable a.
+                       # Thus, when we change a, x also changes.
+              func2()  ==> 10
+              
+              a = 5
+              func2()  ==> 5
+
+
+
+Que10: What data form does None belong to?
+Ans: None is the object of the class NoneType. Thus, None belongs to the data form NoneType
+
+
+Que11: What does the sentence import areallyourpetsnamederic do?
+Ans: It will import all items present in the global scope of the module areallyourpetsnamederic in the current module.
+
+
+
+
