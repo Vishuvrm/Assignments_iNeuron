@@ -73,8 +73,16 @@ Ans: None is the object of the class NoneType. Thus, None belongs to the data fo
 
 
 Que11: What does the sentence import areallyourpetsnamederic do?
-Ans: It will import all items present in the global scope of the module areallyourpetsnamederic in the current module.
-
-
-
+Ans: When the python runs the statement: import areallyourpetsnamederic, then various things happen.
+     1) First of all the python will check the sys.modules cache to see if module is already imported. If yes, it will use the same reference for that module in the
+        current running environment, as was there in sys.modules cache. If no, then it will have to load the module.
+     2) The python loads the module via following steps:
+        step a) Search for the module areallyourpetsnamederic in paths mentioned in sys.path.  If module is not present in any path, it will show ModuleNotFound error, otherwise
+                step b will happen.
+        step b) If python doesn't find the module in sys.path, then it will first create a module object (type.ModuleType).
+        step c) Then it will load the complete source code from the module file in the memory.
+        step d) Then it adds an entry to sys.modules cache and globals() cache with name as module name (areallyourpetsnamederic) and key as the reference to the module object created.
+        sted e) Then it compiles and executes the source code.
+      NOTE: If the module is imported for the 1st time, then python actually compiles and executes the code in module.
+            However, if it is imported more than 1 time, then it will not reload the module. It will simply use the reference in the sys.modules or globals() cache.
 
