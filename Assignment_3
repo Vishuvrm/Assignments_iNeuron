@@ -1,5 +1,7 @@
 Que1: What are the benefits of including roles in the programmes?
-Ans: 
+Ans: It reduces the burden on the signle person by distributing the different programming
+     tasks to different individuals, like Exception handling part on one person, file handling 
+     on another, logic buiding part on another, database part to anothe, etc.
 
 Que2: When does the code in a function run: when it's specified or when it's called?
 Ans: When it is called.
