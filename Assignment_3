@@ -86,3 +86,17 @@ Ans: When the python runs the statement: import areallyourpetsnamederic, then va
       NOTE: If the module is imported for the 1st time, then python actually compiles and executes the code in module.
             However, if it is imported more than 1 time, then it will not reload the module. It will simply use the reference in the sys.modules or globals() cache.
 
+Que12: If you had a bacon() feature in a spam module, what would you call it after importing spam?
+Ans: After importing the spam module, we would call bacon() as method, and we would call it as:
+     spam.bacon()
+
+Que13: What can you do to save a programme from crashing if it encounters an error?
+Ans: To save a program from crashing due to an error, we shoud do exception handling, so that
+    if anytime an error occur, the program can handle that error wothout crashing.
+    
+Que14: What is the purpose of the try clause? What is the purpose of the except clause?
+Ans: In try clause, we generally write that part of the code where we expect some run-time exception. If no exception is found in the code present in try block, the program 
+     runs as if there were no try block present, but if any exception occurs in the code in the try block, then instead of directly throwing the error in the console,
+     the try block detect that error, and stops running the furthur code in the try clause and the control goes to the except clause, where the error in the try clause is handled.
+    
+
